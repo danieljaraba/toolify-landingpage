@@ -50,6 +50,7 @@ const Footer = ({ t }: any) => {
       <FooterSection>
         <Container>
           <Row justify="space-between">
+            {/*
             <Col lg={10} md={10} sm={12} xs={12}>
               <Language>{t("Contact")}</Language>
               <Large to="/">{t("Tell us everything")}</Large>
@@ -60,7 +61,9 @@ const Footer = ({ t }: any) => {
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
             </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
+            */}
+            {/*
+              <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Policy")}</Title>
               <Large to="/" left="true">
                 {t("Application Security")}
@@ -102,8 +105,9 @@ const Footer = ({ t }: any) => {
                 {t("Careers & Culture")}
               </Large>
             </Col>
+            */}
             <Col lg={6} md={6} sm={12} xs={12}>
-              <Label htmlFor="select-lang">{t("Language")}</Label>
+              <Label htmlFor="select-lang">{t("Lenguaje")}</Label>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("en")}>
                   <SvgIcon
@@ -143,7 +147,8 @@ const Footer = ({ t }: any) => {
                 />
               </LogoContainer>
             </NavLink>
-            <FooterContainer>
+            {/*
+              <FooterContainer>
               <SocialLink
                 href="https://github.com/Adrinlol/create-react-app-adrinlol"
                 src="github.svg"
@@ -167,6 +172,7 @@ const Footer = ({ t }: any) => {
                 />
               </a>
             </FooterContainer>
+            */}
           </Row>
         </Container>
       </Extra>
