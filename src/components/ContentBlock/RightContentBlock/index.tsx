@@ -10,6 +10,15 @@ import {
   ContentWrapper,
   ButtonWrapper,
 } from "./styles";
+import { doc, increment, updateDoc } from "firebase/firestore";
+import { db } from "../../../database/firebase/firebase";
+
+const updateCallToAction = async () => {
+  const calltoaction = doc(db,"events","calltoaction");
+  await updateDoc(calltoaction, {
+    times: increment(1)
+  })
+}
 
 const RightBlock = ({
   title,
@@ -20,6 +29,7 @@ const RightBlock = ({
   id,
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
+    updateCallToAction()
     const element = document.getElementById(id) as HTMLDivElement;
     element.scrollIntoView({
       behavior: "smooth",

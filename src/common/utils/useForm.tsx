@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { notification } from "antd";
 import axios from "axios";
+import { addDoc, collection } from "firebase/firestore";
+import { db } from "../../database/firebase/firebase";
 
 export const useForm = (validate: any) => {
   const [values, setValues] = useState({});
@@ -9,24 +11,21 @@ export const useForm = (validate: any) => {
 
   const openNotificationWithIcon = () => {
     notification["success"]({
-      message: "Success",
-      description: "Your message has been sent!",
+      message: "Exitoso",
+      description: "¡Su información ha sido enviada con exito!",
     });
   };
 
   const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
     setErrors(validate(values));
-    // Your url for API
-    const url = "";
     if (Object.keys(values).length === 3) {
-      axios
-        .post(url, {
-          ...values,
-        })
+      
+      addDoc(collection(db,"forms"), values)
         .then(() => {
           setShouldSubmit(true);
         });
+      
     }
   };
 
