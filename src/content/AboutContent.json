@@ -1,16 +1,16 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Busca, compra y construye",
+  "text": "Obten la oferta de todos los productos disponibles para la compra en tu zona, compara precio con cada uno de los vendedores, analiza costos por ubicación y verifica la calidad.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "title": "Compara",
+      "content": "Escoge el producto y observa todas las diferentes ofertas disponibles.",
       "icon": "notes.svg"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
-      "icon": "notes.svg"
+      "title": "Analiza",
+      "content": "Identifica la calidad del producto y compara costos de envío.",
+      "icon": "radar.svg"
     }
   ]
 }

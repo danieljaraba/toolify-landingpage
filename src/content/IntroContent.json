@@ -1,13 +1,9 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "Obtener materiales y herramientas ahora es más fácil",
+  "text": "¡Ahorra tiempo y dinero al momento de buscar lo que necesitas para construir tu casa, edificación o abastecer tu negocio! Nos encargamos de darte las mejores opciones, tu enfocate en lo que haces mejor.",
   "button": [
     {
       "title": "Explore"
-    },
-    {
-      "title": "Learn more",
-      "color": "#fff"
     }
   ]
 }
